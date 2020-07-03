@@ -39,13 +39,13 @@
     }
   },
   "trainer": {
-    "steps": 10000,
+    "steps": 100000,
     "save_dir": "saved/",
     "save_freq": 1000,
     "verbosity": 2
   },
   "visualization": {
-    "tensorboardX": false,
+    "tensorboardX": true,
     "log_dir": "saved/runs"
   },
   "feature": {
