@@ -19,7 +19,7 @@
     "type": "RandomWaveFileLoader",
     "args": {
       "data_dir": "data/",
-      "batch_size": 10,
+      "batch_size": 16,
       "num_workers": 2,
       "segment": 5000,
       "quantization_channels": 256,
@@ -43,7 +43,7 @@
   "trainer": {
     "steps": 500000,
     "save_dir": "saved/",
-    "save_freq": 50000,
+    "save_freq": 5000,
     "verbosity": 2
   },
   "visualization": {
