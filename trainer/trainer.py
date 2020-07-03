@@ -44,7 +44,8 @@ class Trainer(BaseTrainer):
                     self.steps,
                     100.0 * step / self.steps,
                     loss.item()))
-                self.writer.add_image('input', make_grid(data.cpu(), nrow=8, normalize=True))
+                # This doesn't work for me
+                #self.writer.add_image('input', make_grid(data.cpu(), nrow=8, normalize=True))
 
             if self.lr_scheduler is not None:
                 self.lr_scheduler.step()
